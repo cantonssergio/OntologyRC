@@ -1,0 +1,542 @@
+@prefix : <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#> .
+
+<http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#sameAs
+:sameAs rdf:type owl:AnnotationProperty ;
+        rdfs:subPropertyOf rdfs:seeAlso .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Managed_by
+:Managed_by rdf:type owl:ObjectProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range :Airline .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Reviews
+:Reviews rdf:type owl:ObjectProperty ;
+         rdfs:domain :Author ;
+         rdfs:range :Flight .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_In
+:flies_In rdf:type owl:ObjectProperty ;
+          rdfs:domain :Passenger ;
+          rdfs:range :Aircraft .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_from
+:flies_from rdf:type owl:ObjectProperty ;
+            owl:inverseOf :flies_to ;
+            rdfs:domain :Aircraft ,
+                        :Crew_member ;
+            rdfs:range :Origin ;
+            rdfs:comment "Starting poing of the flight" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_to
+:flies_to rdf:type owl:ObjectProperty ;
+          rdfs:domain :Aircraft ,
+                      :Crew_member ;
+          rdfs:range :Destination .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#works_in
+:works_in rdf:type owl:ObjectProperty ;
+          rdfs:domain :Cabin_staff ;
+          rdfs:range :Aircraft ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :works_in ;
+                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :Airline
+                     ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Age
+:Age rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf :Personal_information ;
+     rdfs:range owl:real ;
+     rdfs:comment "Person's age" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Arrival_date
+:Arrival_date rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Flight ;
+              rdfs:comment "Date and time of the plane's arrival" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Departure_date
+:Departure_date rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Flight ;
+                rdfs:comment "Date and time of the flight's start" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight_number
+:Flight_number rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Flight ;
+               rdfs:comment "identification number of the flight" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Gender
+:Gender rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :Personal_information ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Sexual identification" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Location
+:Location rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Author ,
+                      :Destination ,
+                      :Origin ;
+          rdfs:comment "Place in a country or city" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Model
+:Model rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Aircraft ;
+       rdfs:comment "Kind of airplane" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :Personal_information ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Name of the person" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Nationality
+:Nationality rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :Personal_information ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Origin country" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Personal_information
+:Personal_information rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Crew_member ;
+                      rdfs:comment "Sensitive data about a person" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#company_name
+:company_name rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Airline .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasBody
+:hasBody rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Review ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Review ;
+           rdfs:range owl:real .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:subClassOf :Flight ;
+          rdfs:comment "Aerial vehicle with two wings designed to carry passengers." ;
+          rdfs:seeAlso "https://dbpedia.org/page/Airplane" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline
+:Airline rdf:type owl:Class ;
+         rdfs:comment "Company that offers and manages flights" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airport
+:Airport rdf:type owl:Class ;
+         rdfs:subClassOf :Flight ;
+         rdfs:comment "Starting or ending point of a flight" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author
+:Author rdf:type owl:Class ;
+        owl:equivalentClass :Passenger ;
+        rdfs:subClassOf :Review ;
+        rdfs:comment "Passenger that reviews his flight experience" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Cabin_staff
+:Cabin_staff rdf:type owl:Class ;
+             rdfs:subClassOf :Crew_member ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :flies_In ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Aircraft
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :works_in ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Airline
+                             ] ;
+             rdfs:comment "Personel hired by a company to operate an aircraft" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Commentary
+:Commentary rdf:type owl:Class ;
+            rdfs:subClassOf :Review ;
+            rdfs:comment "Review about the review, or extension of it by other users" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member
+:Crew_member rdf:type owl:Class ;
+             rdfs:subClassOf :Flight ;
+             rdfs:comment "Person traveling in the plane" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination
+:Destination rdf:type owl:Class ;
+             rdfs:subClassOf :Airport ;
+             rdfs:comment "Ending place of the flight" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf :Airline ;
+        rdfs:comment "Travel through the air from one point to another, tipically in a plane" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Food_and_Beverages
+:Food_and_Beverages rdf:type owl:Class ;
+                    rdfs:subClassOf :Services ;
+                    rdfs:comment "Food and drinks given to the passengers" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Ground_services
+:Ground_services rdf:type owl:Class ;
+                 rdfs:subClassOf :Services ;
+                 rdfs:comment "Extra commodities given to the passengers before and after the flight" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#High
+:High rdf:type owl:Class ;
+      rdfs:subClassOf :Rating ;
+      rdfs:comment "High rating" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Inflight_entertainment
+:Inflight_entertainment rdf:type owl:Class ;
+                        rdfs:subClassOf :Services ;
+                        rdfs:comment "Commodities given during the flight to entertain the passengers" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Low
+:Low rdf:type owl:Class ;
+     rdfs:subClassOf :Rating ;
+     rdfs:comment "Low Rating" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Medium
+:Medium rdf:type owl:Class ;
+        rdfs:subClassOf :Rating ;
+        rdfs:comment "Medium Rating" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin
+:Origin rdf:type owl:Class ;
+        rdfs:subClassOf :Airport ;
+        rdfs:comment "Starting point of the flight" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf :Crew_member ;
+           rdfs:comment "Citizen that hires the flight services" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Pilot
+:Pilot rdf:type owl:Class ;
+       rdfs:subClassOf :Cabin_staff ;
+       rdfs:comment "airplane operator" ;
+       rdfs:seeAlso "https://dbpedia.org/page/Aircraft_pilot" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf :Review ;
+        rdfs:comment "Rating categories" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review
+:Review rdf:type owl:Class ;
+        rdfs:subClassOf :Flight ;
+        rdfs:comment "To evaluate or comment something trying to express it's value" ;
+        rdfs:seeAlso "https://dbpedia.org/page/User_review" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Seat
+:Seat rdf:type owl:Class ;
+      rdfs:subClassOf :Aircraft ;
+      rdfs:comment "Space assigned to each passenger" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Services
+:Services rdf:type owl:Class ;
+          rdfs:subClassOf :Flight ;
+          rdfs:comment "Added value to the trip beyond the flight itself" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Steward
+:Steward rdf:type owl:Class ;
+         rdfs:subClassOf :Cabin_staff ;
+         rdfs:comment "Passenger's assistant" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Wifi_and_connectivity
+:Wifi_and_connectivity rdf:type owl:Class ;
+                       rdfs:subClassOf :Services ;
+                       rdfs:comment "Internet connection during the flight" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft1
+:Aircraft1 rdf:type owl:NamedIndividual ,
+                    :Aircraft ;
+           :Model "Boeing 747" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline1
+:Airline1 rdf:type owl:NamedIndividual ,
+                   :Airline ;
+          :company_name "Qatar Arilines" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author1
+:Author1 rdf:type owl:NamedIndividual ,
+                  :Author ;
+         owl:sameAs :Passenger1 ;
+         :Reviews :Flight1 .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger1
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination1
+:Destination1 rdf:type owl:NamedIndividual ;
+              :Location "Doha" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight1
+:Flight1 rdf:type owl:NamedIndividual ,
+                  :Flight ;
+         :Managed_by :Airline1 ;
+         :flies_from :Origin1 ;
+         :flies_to :Destination1 ;
+         :Arrival_date "02/05/2012" ;
+         :Departure_date "01/05/2012" ;
+         :Flight_number "VY3478" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin1
+:Origin1 rdf:type owl:NamedIndividual ,
+                  :Origin ;
+         :Location "Haneda" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger1
+:Passenger1 rdf:type owl:NamedIndividual ,
+                     :Passenger ;
+            :flies_In :Aircraft1 ;
+            :flies_from :Origin1 ;
+            :flies_to :Destination1 ;
+            :Age 50 ;
+            :Gender "Female" ;
+            :Name "Mary Le" ;
+            :Nationality "United Kingdom" .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review1
+:Review1 rdf:type owl:NamedIndividual ,
+                  :Review ;
+         :Reviews :Flight1 ;
+         :hasBody "" ;
+         :hasRating 6 .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review2
+:Review2 rdf:type owl:NamedIndividual ;
+         :Reviews :Flight1 ;
+         :hasBody "Lorem Ipsum" ;
+         :hasRating 2 .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review3
+:Review3 rdf:type owl:NamedIndividual ;
+         :hasRating 9 .
+
+
+###  http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Staff1
+:Staff1 rdf:type owl:NamedIndividual ,
+                 :Pilot .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Review ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 7 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :High ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Review ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 7 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 4 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Medium ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Review ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Low ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
