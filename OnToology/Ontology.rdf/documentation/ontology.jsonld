@@ -1,0 +1,857 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#works_in"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Low"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "7"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_In"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#High"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    }, {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid40"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#works_in"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "7"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    }, {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid14"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Medium"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Person's age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Personal_information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Aerial vehicle with two wings designed to carry passengers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/page/Airplane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Model" : [ {
+    "@value" : "Boeing 747"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Company that offers and manages flights"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#company_name" : [ {
+    "@value" : "Qatar Arilines"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Starting or ending point of a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Arrival_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date and time of the plane's arrival"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger that reviews his flight experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Reviews" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Cabin_staff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Personel hired by a company to operate an aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Commentary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Review about the review, or extension of it by other users"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Person traveling in the plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Departure_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date and time of the flight's start"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ending place of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Location" : [ {
+    "@value" : "Doha"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Travel through the air from one point to another, tipically in a plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Arrival_date" : [ {
+    "@value" : "02/05/2012"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Departure_date" : [ {
+    "@value" : "01/05/2012"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight_number" : [ {
+    "@value" : "VY3478"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Managed_by" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline1"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_from" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin1"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_to" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "identification number of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Food_and_Beverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Food and drinks given to the passengers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sexual identification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Personal_information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Ground_services",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Extra commodities given to the passengers before and after the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#High",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "High rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Inflight_entertainment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Commodities given during the flight to entertain the passengers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Place in a country or city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author"
+  }, {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination"
+  }, {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Low",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Low Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Managed_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Kind of airplane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Personal_information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Nationality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Origin country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Personal_information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Starting point of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Location" : [ {
+    "@value" : "Haneda"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Citizen that hires the flight services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "50"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Gender" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Name" : [ {
+    "@value" : "Mary Le"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Nationality" : [ {
+    "@value" : "United Kingdom"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_In" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft1"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_from" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin1"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_to" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Personal_information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sensitive data about a person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Pilot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "airplane operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/page/Aircraft_pilot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Cabin_staff"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rating categories"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "To evaluate or comment something trying to express it's value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/page/User_review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Reviews" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight1"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasBody" : [ {
+    "@value" : ""
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Reviews" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight1"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasBody" : [ {
+    "@value" : "Lorem Ipsum"
+  } ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Reviews",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Seat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Space assigned to each passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Services",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Added value to the trip beyond the flight itself"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Staff1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Pilot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Steward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Passenger's assistant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Cabin_staff"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Wifi_and_connectivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Internet connection during the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Services"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#company_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_In",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_from",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Starting poing of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  }, {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_to"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_to",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  }, {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#works_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Cabin_staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/ra",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5/re",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]

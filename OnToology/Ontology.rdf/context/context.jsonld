@@ -1,0 +1,160 @@
+{
+  "@context" : {
+    "Inflight_entertainment" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Inflight_entertainment"
+    },
+    "Age" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Age",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "hasRating" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasRating",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Review"
+    },
+    "Cabin_staff" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Cabin_staff"
+    },
+    "Personal_information" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Personal_information"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Flight_number" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight_number"
+    },
+    "Managed_by" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Managed_by",
+      "@type" : "@id"
+    },
+    "Crew_member" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Crew_member"
+    },
+    "Medium" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Medium"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Destination" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Destination"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Location"
+    },
+    "Origin" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Origin"
+    },
+    "Nationality" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Nationality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "works_in" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#works_in",
+      "@type" : "@id"
+    },
+    "Airport" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airport"
+    },
+    "Gender" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Gender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Services" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Services"
+    },
+    "Pilot" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Pilot"
+    },
+    "Model" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Model"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Passenger"
+    },
+    "hasBody" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#hasBody",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Seat" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Seat"
+    },
+    "High" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#High"
+    },
+    "Commentary" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Commentary"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Rating"
+    },
+    "Departure_date" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Departure_date"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Aircraft"
+    },
+    "Ground_services" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Ground_services"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Airline"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Flight"
+    },
+    "Author" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Author"
+    },
+    "company_name" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#company_name"
+    },
+    "Wifi_and_connectivity" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Wifi_and_connectivity"
+    },
+    "flies_from" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_from",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Steward" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Steward"
+    },
+    "Low" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Low"
+    },
+    "Reviews" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Reviews",
+      "@type" : "@id"
+    },
+    "Arrival_date" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Arrival_date"
+    },
+    "sameAs" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Name" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "flies_In" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_In",
+      "@type" : "@id"
+    },
+    "flies_to" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#flies_to",
+      "@type" : "@id"
+    },
+    "Food_and_Beverages" : {
+      "@id" : "http://www.semanticweb.org/canto/ontologies/2024/3/untitled-ontology-5#Food_and_Beverages"
+    }
+  }
+}
