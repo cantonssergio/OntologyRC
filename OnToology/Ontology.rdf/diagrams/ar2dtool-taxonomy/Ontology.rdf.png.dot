@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "untitled-ontology-5:Review" "untitled-ontology-5:Food_and_Beverages" "untitled-ontology-5:Inflight_entertainment" "untitled-ontology-5:Origin" "untitled-ontology-5:Flight" "untitled-ontology-5:Services" "untitled-ontology-5:Passenger" "untitled-ontology-5:High" "untitled-ontology-5:Steward" "untitled-ontology-5:Wifi_and_connectivity" "untitled-ontology-5:Author" "untitled-ontology-5:Low" "untitled-ontology-5:Crew_member" "untitled-ontology-5:Pilot" "untitled-ontology-5:Ground_services" "untitled-ontology-5:Cabin_staff" "untitled-ontology-5:Seat" "untitled-ontology-5:Rating" "untitled-ontology-5:Medium" "untitled-ontology-5:Destination" "untitled-ontology-5:Aircraft" "untitled-ontology-5:Airline" "untitled-ontology-5:Commentary" "untitled-ontology-5:Airport" ; /*classes style*/
+	"untitled-ontology-5:Services" -> "untitled-ontology-5:Flight" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Ground_services" -> "untitled-ontology-5:Services" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:High" -> "untitled-ontology-5:Rating" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Flight" -> "untitled-ontology-5:Airline" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Aircraft" -> "untitled-ontology-5:Flight" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Author" -> "untitled-ontology-5:Review" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Pilot" -> "untitled-ontology-5:Cabin_staff" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Origin" -> "untitled-ontology-5:Airport" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Destination" -> "untitled-ontology-5:Airport" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Crew_member" -> "untitled-ontology-5:Flight" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Cabin_staff" -> "untitled-ontology-5:Crew_member" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Passenger" -> "untitled-ontology-5:Crew_member" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Medium" -> "untitled-ontology-5:Rating" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Food_and_Beverages" -> "untitled-ontology-5:Services" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Low" -> "untitled-ontology-5:Rating" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Rating" -> "untitled-ontology-5:Review" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Airport" -> "untitled-ontology-5:Flight" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Seat" -> "untitled-ontology-5:Aircraft" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Commentary" -> "untitled-ontology-5:Review" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Steward" -> "untitled-ontology-5:Cabin_staff" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Review" -> "untitled-ontology-5:Flight" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Inflight_entertainment" -> "untitled-ontology-5:Services" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-5:Wifi_and_connectivity" -> "untitled-ontology-5:Services" [ label = "rdfs:subClassOf" ];
+
+}
